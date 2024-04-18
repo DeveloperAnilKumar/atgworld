@@ -1,0 +1,18 @@
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.loginCard {
+  width: 320px;
+  height: 313px;
+ 
+}
+
+.img-card{
+    width: 320px;
+    height: 320px;
+}

@@ -1,0 +1,112 @@
+@media screen and (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-options {
+    margin-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
+
+  .filter-options p {
+    margin-bottom: 10px;
+  }
+}
+
+/* Default styles for all devices */
+.d-flex.justify-content-between.align-content-center.px-4 {
+  margin-top: 50px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.me-3.fw-bold {
+  border-bottom: 1px solid #000000;
+  padding: 24px;
+}
+
+.dropdown.rounded-0 {
+  background: gray;
+  margin-right: 10px;
+  background-color: #edeef0;
+}
+
+/* Default styles */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-options {
+  display: flex;
+  align-items: center;
+}
+
+.filter-options p {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+/* Small screens (max-width: 576px) */
+@media screen and (max-width: 575.98px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-options {
+    margin-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .filter-options p {
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium screens (min-width: 576px and max-width: 768px) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-options {
+    margin-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .filter-options p {
+    margin-bottom: 10px;
+  }
+}
+
+/* Large screens (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  /* No changes needed for large screens */
+}
+
+/* Hide the element on small and medium devices */
+@media (max-width: 767.98px) {
+  .d-flex.justify-content-between.align-content-center.px-4 {
+    display: none !important;
+  }
+}
+
+/* Alternatively, you can use the Bootstrap class "d-none" */
+@media (max-width: 767.98px) {
+  .d-flex.justify-content-between.align-content-center.px-4 {
+    display: none !important;
+  }
+}
