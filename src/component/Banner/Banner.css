@@ -26,8 +26,8 @@
 
 .banner-content {
   position: absolute;
-  top: 70%;
-  left: 5%;
+  top: 350px;
+  left: 200px;
   transform: translateY(-50%);
   color: #ffffff;
   max-width: 50%;
@@ -42,114 +42,90 @@
 .banner-content p {
   font-size: 18px;
   line-height: 23.4px;
+  margin-top: 10px;
 }
 
 /* Styles for extra-small screens (xs) */
-@media (max-width: 575.98px) {
-  .banner {
-    height: 300px;
-  }
 
-  .banner-content {
-    max-width: 90%;
-    padding: 1rem;
-  }
-
+@media (max-width: 768px) {
   .banner-content span {
-    font-size: 24px;
-    line-height: 31.2px;
-  }
-
-  .banner-content p {
-    font-size: 14px;
-    line-height: 18.2px;
-  }
-}
-
-/* Styles for small screens (sm) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .banner {
-    height: 360px;
-  }
-
-  .banner-content {
-    max-width: 80%;
-    padding: 1.5rem;
-  }
-
-  .banner-content span {
-    font-size: 28px;
-    line-height: 36.4px;
-  }
-
-  .banner-content p {
     font-size: 16px;
-    line-height: 20.8px;
-  }
-}
-
-/* Styles for medium screens (md) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .banner {
-    height: 400px;
-  }
-
-  .banner-content {
-    max-width: 60%;
-    padding: 2rem;
-  }
-
-  .banner-content span {
-    font-size: 32px;
-    line-height: 41.6px;
+    line-height: 11px;
+    margin-bottom: 10px;
+    margin-left: -200px;
   }
 
   .banner-content p {
-    font-size: 17px;
-    line-height: 22.1px;
+    font-size: 15px;
+    line-height: 10px;
+    margin-bottom: 10px;
+    margin-left: -200px;
   }
 }
 
-/* Styles for large screens (lg) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .banner {
-    height: 440px;
-  }
-
-  .banner-content {
-    max-width: 50%;
-    padding: 2rem;
-  }
-
+@media (max-width: 480px) {
   .banner-content span {
-    font-size: 36px;
-    line-height: 46.8px;
+    font-size: 16px;
+
+    line-height: 11px;
+    margin-bottom: 10px;
+    margin-left: -200px;
   }
 
   .banner-content p {
-    font-size: 18px;
-    line-height: 23.4px;
+    font-size: 11px;
+
+    line-height: 10px;
+  }
+}
+/* Hide by default */
+/* Default styles */
+.modal-dialog {
+  max-width: 736px;
+}
+
+.modal-content {
+  box-shadow: 0px 8px 24px 0px #00000040;
+}
+
+.loginCard {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Styles for small screens */
+@media (max-width: 575.98px) {
+  .modal-dialog {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .loginCard {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .form-control,
+  .btn {
+    font-size: 12px;
   }
 }
 
-/* Styles for extra-large screens (xl) */
-@media (min-width: 1200px) {
-  .banner {
-    height: 480px;
+/* Styles for medium screens */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .modal-dialog {
+    max-width: 80%;
   }
 
-  .banner-content {
-    max-width: 40%;
-    padding: 2.5rem;
-  }
-
-  .banner-content span {
-    font-size: 42px;
-    line-height: 54.6px;
-  }
-
-  .banner-content p {
-    font-size: 20px;
-    line-height: 26px;
+  .loginCard {
+    max-width: 100%;
+    padding: 15px;
   }
 }
+
+/* Additional styles */

@@ -1,7 +1,10 @@
 import React from "react";
 import "./Filter.css";
+import { useSelector } from "react-redux";
 
 function Filter() {
+  const { isLogin } = useSelector((state) => state.auth);
+
   return (
     <div className=" container-fluid ">
       <div
@@ -12,7 +15,11 @@ function Filter() {
           paddingBottom: "10px",
         }}
       >
-        <div>
+        <div
+          style={{
+            fontSize: "16px",
+          }}
+        >
           <span
             className="me-3 fw-bold"
             style={{
@@ -43,6 +50,9 @@ function Filter() {
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              style={{
+                fontSize: "15px",
+              }}
             >
               <span className="me-2">Write a Post</span>
             </a>
@@ -56,20 +66,46 @@ function Filter() {
             </ul>
           </div>
 
-          <button className="btn btn-primary rounded-0">
-            <span className="bi bi-person-fill-add me-2"></span> Join Group{" "}
-          </button>
+          {isLogin === true ? (
+            <button
+              className="btn  rounded-0"
+              style={{
+                fontSize: "15px",
+                border: "0.8px solid #989899",
+              }}
+            >
+              <span className="bi bi-box-arrow-in-right me-2"></span> Leave
+              Group{" "}
+            </button>
+          ) : (
+            <button
+              className="btn btn-primary rounded-0"
+              style={{
+                fontSize: "15px",
+              }}
+            >
+              <span className="bi bi-person-fill-add me-2"></span> Join Group{" "}
+            </button>
+          )}
         </div>
       </div>
 
       <div
-        className="d-flex justify-content-between px-4 mt-2 d-md-none d-sm-block"
+        className="d-flex justify-content-between  align-items-center mt-2 d-md-none d-sm-block"
         style={{
           borderBottom: "1px solid #E0E0E0",
           paddingBottom: "10px",
         }}
       >
-        <p>Posts(368)</p>
+        <p
+          style={{
+            color: "#212529",
+            fontWeight: "600",
+            marginTop: "20px",
+          }}
+        >
+          Posts(368)
+        </p>
 
         <div
           className="dropdown rounded-0"

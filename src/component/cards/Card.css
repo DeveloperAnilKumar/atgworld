@@ -1,0 +1,62 @@
+.dots-icon {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dots-icon:hover {
+  background-color: #bfbfc0 !important;
+  padding: 0px 13px;
+  padding-bottom: 11px;
+}
+.card-title {
+  font-size: 22px;
+  line-height: 28.6px;
+  width: 600px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.card-text {
+  color: #5c5c5c;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .hide-views {
+    display: none;
+  }
+  .title-size {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .description {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .date-location {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .date-location span.icon2 {
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .date-location span.icon2 span {
+    font-size: 12px;
+  }
+}

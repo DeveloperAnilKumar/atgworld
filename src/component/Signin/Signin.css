@@ -9,10 +9,11 @@
 .loginCard {
   width: 320px;
   height: 313px;
- 
 }
 
-.img-card{
-    width: 320px;
-    height: 320px;
+.img-card {
+  width: 320px;
+  height: 320px;
 }
+
+/* Show the image on larger screens */

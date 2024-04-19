@@ -1,0 +1,30 @@
+.modal-header {
+  border-bottom: 1px solid #eee;
+  background-color: #effff4;
+}
+.modal-header .close {
+  margin-top: 2px;
+}
+.modal-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
+
+.site-title {
+  display: inline-block;
+  background: linear-gradient(138.44deg, #00a854 23.11%, #004d25 76.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+.site-sub {
+  color: #5c5d5d;
+  font-size: 2rem;
+}
+
+.site-sub img {
+  width: 23.98px;
+  height: 27px;
+  object-fit: cover;
+}
