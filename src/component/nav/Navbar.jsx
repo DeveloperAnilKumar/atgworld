@@ -1,9 +1,9 @@
-
 import "./Navbar.css";
 import SignIn from "../Signin/SignIn";
 import SignUp from "../SignUp/SignUp";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutUser } from "../store/redux/authSlice";
+import Home from "../Home/Home";
 
 function Navbar() {
   const { user, isLogin } = useSelector((state) => state.auth);
@@ -149,7 +149,7 @@ function Navbar() {
       </header>
 
       {isLogin == true ? (
-        " "
+        ""
       ) : (
         <div
           className="modal fade "
@@ -194,7 +194,7 @@ function Navbar() {
                   type="button"
                   className="btn-close rounded-pill  "
                   data-bs-dismiss="modal"
-                  aria-label="Close"
+                  aria-label="close"
                   style={{
                     position: "relative",
                     left: "20px",
@@ -256,7 +256,7 @@ function Navbar() {
                 type="button"
                 className="btn-close rounded-pill  "
                 data-bs-dismiss="modal"
-                aria-label="Close"
+                aria-label="close"
                 style={{
                   position: "relative",
                   left: "20px",

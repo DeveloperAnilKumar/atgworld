@@ -9,20 +9,23 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="container-fluid">
+    <div className="">
       <div className="navbar-div">
         <Navbar />
       </div>
 
-      <div>
-        <Banner />
-      </div>
+      <Banner />
 
-      <div className="container-fluid row-cols-1">
+      <div
+        className="container-fluid  "
+        style={{
+          padding: "0 90px",
+        }}
+      >
         <Filter />
       </div>
 
-      <div className="d-flex flex-wrap justify-content-center gap-4 mt-4 ">
+      <div className="d-flex flex-wrap justify-content-center ms-5 gap-5 mt-4 ">
         <div className="container-fluid col-lg-7">
           {userData.map((item, index) => (
             <Card

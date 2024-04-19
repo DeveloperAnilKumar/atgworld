@@ -25,6 +25,10 @@ function LocationCard() {
           placeholder={`${
             !isLogin === true ? "Noida, India" : "Enter your location"
           }`}
+
+          style={{
+            fontSize:"14px"
+          }}
         />
         <span
           className={`${

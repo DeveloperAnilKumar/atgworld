@@ -8,7 +8,7 @@ function Filter() {
   return (
     <div className=" container-fluid ">
       <div
-        className="d-flex justify-content-between align-content-center px-4 "
+        className="d-flex justify-content-between align-content-center flex-wrap px-4 "
         style={{
           marginTop: "50px",
           borderBottom: "1px solid #E0E0E0",
@@ -35,7 +35,7 @@ function Filter() {
           <span className="me-3"> Job</span>
         </div>
 
-        <div className="d-flex">
+        <div className="d-flex   ">
           <div
             className="dropdown rounded-0"
             style={{
